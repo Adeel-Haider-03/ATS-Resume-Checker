@@ -1,6 +1,7 @@
 # ATS Resume Checker
 
 **ATS Resume Checker** is a tool designed to help job seekers optimize their resumes for Applicant Tracking Systems (ATS). It parses resumes and checks for compatibility with ATS systems to ensure that resumes are readable and meet the criteria often required for automated filtering.
+## Link https://my-ats-resume-checker.vercel.app/  
 
 ## Features
 
@@ -24,7 +25,7 @@ To install and run the project locally:
 
 1. Clone the repository:
  
-   git clone https://github.com/yourusername/ats-resume-checker.git
+   https://github.com/Adeel-Haider-03/ATS-Resume-Checker.git  
   
 
 2. Navigate to the project directory:
