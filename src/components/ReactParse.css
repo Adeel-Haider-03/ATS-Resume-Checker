@@ -1,0 +1,25 @@
+.input-container{
+    display: grid;
+    text-align: centers;
+    place-items: center;
+}
+/* Input styling */
+input {
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+    color: white;
+}
+
+/* Label styling */
+label {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: white;
+}
+

@@ -1,0 +1,88 @@
+/* GeminiAPI.css */
+
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #0e0d30;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+  button {
+    color: white;
+    background-color: #b1163d;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  button:disabled {
+    cursor: not-allowed;
+  }
+  
+  .loading {
+    font-size: 18px;
+    color: #44d224;
+    margin-top: 20px;
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.5;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.5;
+    }
+  }
+  
+  .error {
+    color: #f44336;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .response {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    font-size: 16px;
+    text-align: left;
+    line-height: 1.6;
+  }
+  
+  .response p {
+    margin-bottom: 10px;
+  }
+  
+  .response strong {
+    color: #083021;
+    text-decoration: underline;
+  }
+
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    button {
+      width: 100%;
+    }
+  }
+  
