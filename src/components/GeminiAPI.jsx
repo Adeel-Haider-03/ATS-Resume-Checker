@@ -22,7 +22,19 @@ function GeminiAPI({ ResumeKeywords, JobDesc }) {
       const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API);
       const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
-      const prompt = `This is the resume: ${ResumeKeywords} and this is the job description: ${JobDesc}. Please provide an ATS score out of 100 and suggestions for improvement.`;
+      const prompt = `You are an expert ATS (Applicant Tracking System) evaluator. Analyze the following resume and job description, then provide:
+
+1. An ATS compatibility score out of 100.
+2. A breakdown of matched vs. missing keywords.
+3. Specific suggestions to improve the resume's alignment with the job description.
+4. A brief summary of your reasoning.
+
+Resume:
+${ResumeKeywords}
+
+Job Description:
+${JobDesc}
+`;
 
       const result = await model.generateContent(prompt);
       setResponse(result.response.text());
